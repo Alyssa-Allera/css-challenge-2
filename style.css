@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Spartan;
+    src: url("font/static/Spartan-Regular.ttf");
+}
+@font-face {
+    font-family: Spartan-Bold;
+    src: url("font/static/Spartan-Bold.ttf");
+}
+@font-face {
+    font-family: Spartan-Light;
+    src: url("font/static/Spartan-Light.ttf");
+}
+hr{
+    margin: 14px 0;
+}
+.container{
+    margin: 8% 7%;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgba(250, 5, 193, 1), rgba(0, 53, 176, 1)), url("images/bg-mobile.png");
+    background-blend-mode: hard-light;
+    background-size: cover;
+}
+.content{
+    padding: 90px 20px;
+}
+.header{
+    font-family: Spartan;
+    font-weight: 400;
+    color: white;
+    font-size: 23px;
+}
+.first-container, .second-container{
+    padding: 35px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.first-images img, .second-images img{
+    border-radius: 20px;
+    width: 90%;
+    height: auto;
+}
+.first-text, .second-text{
+    align-self: center;
+    justify-self: center;
+    font-family: Spartan;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: white;
+}
+.first-text-title, .second-text-title{
+    padding: 20px 0;
+}
+.first-text-title span, .second-text-title span{
+    display: inline-block;
+}
+.first-text-title .position, .second-text-title .position{
+    font-size: 15px;
+}
+.first-desktop, .second-desktop{
+    display: none;
+}
+@media (min-width: 1200px){
+    hr{
+        margin: 2px 0 6px 9px;
+    }
+    .container{
+        background: linear-gradient(to right, rgba(250, 5, 193, 1), rgba(0, 53, 176, 1)), url("images/bg-desktop.png");
+        background-blend-mode: hard-light;
+        background-size: cover;
+    }
+    .content{
+        padding: 90px 100px 50px;
+    }
+    .content-container{
+        padding-left: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .first-container, .second-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .second-container{
+        margin-top: -120px;
+        padding-left: 30px;
+    }
+    .first-images img, .second-images img{
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .first-text, .second-text{
+        padding-right: 150px;
+        padding-top: 30px;
+        font-size: 15px;
+    }
+    .first-desktop, .second-desktop{
+    display: block;
+    }
+    .first-mobile, .second-mobile{
+    display: none;
+    }
+}

@@ -1,0 +1,18 @@
+Colors: 
+background
+#FA05C1 - Shocking Pink
+#0035B0 - Egyptian Blue
+
+drop shadow:
+#F00DE8 - Fuchsia
+
+Typography:
+Spartan - https://fonts.google.com/specimen/Spartan?query=spartan
+
+
+
+
+
+
+
+
